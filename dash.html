@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="dashb.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bxs-book'></i>
+      <span class="logo_name">ResearchCO</span>
+    </div>
+      <ul class="nav-links">
+        
+        <li>
+          <a href="http://127.0.0.1:5500/main.html">
+            <span class="links_name">Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://meet.google.com/" class="active">Conference Call
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="http://127.0.0.1:5500/login.html">
+            <span class="links_name">Log Out</span>
+          </a>
+        </li>
+        <li>
+          
+          </a>
+        </li>
+        <li>
+         
+        </li>
+        <li>
+          
+          </a>
+        </li>
+        <li>
+         
+          </a>
+        </li>
+        <li>
+          
+          </a>
+        </li>
+        <li>
+          
+          </a>
+        </li>
+        
+          </a>
+        </li>
+      </ul>
+  </div>
+  <section class="home-section">
+    <nav>
+      <div class="sidebar-button">
+        <i class='bx bx-menu sidebarBtn'></i>
+        <span class="dashboard">Dashboard</span>
+      </div>
+      <div class="search-box">
+        <input type="text" placeholder="Search...">
+        <i class='bx bx-search' ></i>
+      </div>
+      <div class="profile-details">
+        <!--<img src="images/profile.jpg" alt="">-->
+        <span class="admin_name">Moeez</span>
+      </div>
+    </nav>
+
+    <div class="home-content">
+      <div class="overview-boxes">
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Current Project</div>
+            <div class="text">Operating System</div>
+            <div class="indicator">
+              <i class='bx bx-up-arrow-alt'></i>
+              <span class="text">in progress</span>
+            </div>
+          </div>
+                  
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Research Papers</div>
+            <div class="number">6</div>
+            
+          </div>
+          <i class="far fa-pen-fancy"></i>
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">No. of Collaborations</div>
+            <div class="number">7</div>
+            
+          </div>
+          <i class="fal fa-user-chart"></i>
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Rating</div>
+            <div class="number">4</div>
+            <div class="indicator">
+              <i class='bx bx-down-arrow-alt down'></i>
+              <span class="text">Down From Today</span>
+            </div>
+          </div>
+          <i class='bx bxs-star' style='color:#ffff00'  ></i>
+          <i class='bx bxs-star' style='color:#ffff00'  ></i>
+          <i class='bx bxs-star' style='color:#ffff00'  ></i>
+          <i class='bx bxs-star' style='color:#ffff00'  ></i>
+        </div>
+      </div>
+
+      <div class="sales-boxes">
+        <div class="recent-sales box">
+          <div class="title">Current Research Paper</div>
+          <div class="sales-details">
+            <ul class="details">
+              <li class="topic">Date</li>
+              <li><a href="#">02 Jan 2021</a></li>
+              
+            </ul>
+            <ul class="details">
+            <li class="topic">Name of Research Paper</li>
+            <li><a href="https://www.geeksforgeeks.org/operating-systems/">Operating System</a></li>
+            
+          </ul>
+          <ul class="details">
+            <li class="topic">Owner</li>
+            <li><a href="#">Prachi Patil</a></li>
+            
+          </ul>
+          <ul class="details">
+            <li class="topic">Duration</li>
+            <li><a href="#">3months</a></li>
+            
+          </ul>
+          </div>
+          
+        </div>
+        <div class="top-sales box">
+          <div class="title">Completed Research</div>
+          <ul class="top-sales-details">
+            <li>
+            <a href="#">
+              
+              <span class="product">Maggie</span>
+            </a>
+            <span class="price" >
+              <a href="https://en.wikipedia.org/wiki/Maggi">Click</a>
+            </span>
+          </li>
+          <li>
+            <a href="#">
+               
+              <span class="product">Coca Cola </span>
+            </a>
+            <span class="price">
+              <a href="https://en.wikipedia.org/wiki/Coca-Cola">Click</a>
+            </span>
+          </li>
+          <li>
+            <a href="#">
+             
+              <span class="product">Covid-19</span>
+            </a>
+            <span class="price">
+              <a href="https://en.wikipedia.org/w/index.php?search=COVID-19+pandemic&title=Special:Search&profile=advanced&fulltext=1&ns0=1">Click</a>
+            </span>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+   let sidebar = document.querySelector(".sidebar");
+let sidebarBtn = document.querySelector(".sidebarBtn");
+sidebarBtn.onclick = function() {
+  sidebar.classList.toggle("active");
+  if(sidebar.classList.contains("active")){
+  sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+}else
+  sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+}
+ </script>
+
+</body>
+</html>
